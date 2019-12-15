@@ -1,0 +1,96 @@
+import {
+  Meta,
+  ColorPalette,
+  ColorItem,
+  IconGallery,
+  IconItem
+} from "@storybook/addon-docs/blocks";
+import { Colors } from "../colors.js";
+
+<Meta title="Design System/Colors" />
+
+# Style
+
+## Colors
+
+<ColorPalette>
+  <ColorItem
+    title="theme.color.primary"
+    subtitle="Coral"
+    colors={[Colors.primary]}
+  />
+  <ColorItem
+    title="theme.color.secondary"
+    subtitle="Blue"
+    colors={[Colors.secondary]}
+  />
+  <ColorItem
+    title="theme.color.tertiary"
+    subtitle="Grey"
+    colors={[Colors.tertiary]}
+  />
+  <ColorItem
+    title="theme.color.positive"
+    subtitle="Green"
+    colors={[Colors.positive]}
+  />
+  <ColorItem
+    title="theme.color.warning"
+    subtitle="Ochre"
+    colors={[Colors.warning]}
+  />
+  <ColorItem
+    title="theme.color.negative"
+    subtitle="Red"
+    colors={[Colors.negative]}
+  />
+  <ColorItem
+    title="theme.color.orange"
+    subtitle="Orange"
+    colors={[Colors.orange]}
+  />
+  <ColorItem title="theme.color.gold" subtitle="Gold" colors={[Colors.gold]} />
+  <ColorItem
+    title="theme.color.green"
+    subtitle="Green"
+    colors={[Colors.green]}
+  />
+  <ColorItem
+    title="theme.color.seafoam"
+    subtitle="Seafoam"
+    colors={[Colors.seafoam]}
+  />
+  <ColorItem
+    title="theme.color.purple"
+    subtitle="Purple"
+    colors={[Colors.purple]}
+  />
+  <ColorItem
+    title="theme.color.ultraviolet"
+    subtitle="Ultraviolet"
+    colors={[Colors.ultraviolet]}
+  />
+  <ColorItem
+    title="Monochrome"
+    colors={[
+      Colors.darkest,
+      Colors.darker,
+      Colors.dark,
+      Colors.mediumdark,
+      Colors.medium,
+      Colors.mediumlight,
+      Colors.light,
+      Colors.lighter,
+      Colors.lightest
+    ]}
+  />
+</ColorPalette>
+
+## Icons
+
+<IconGallery>
+  <IconItem name="add">
+    <div icon="add">s</div>
+  </IconItem>
+  ...
+</IconGallery>

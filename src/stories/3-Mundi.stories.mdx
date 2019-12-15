@@ -1,0 +1,35 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { text, boolean, number } from "@storybook/addon-knobs";
+import Button from "../components/Button";
+
+<Meta title="Components/MunDX" subTitle="booyeh" component={Button} />
+
+# Button
+
+With `MDX` we can define a story for `Button` right in the middle of our
+markdown documentation.
+
+## Examples
+
+### Default
+
+<Preview>
+  <Story name="Default" parameters={{design: {
+    type: "image",
+    url: '../../.storybook/logo.png'
+  }}}>
+    <Button>{text("Text", "Hello Storybook")}</Button>
+  </Story>
+</Preview>
+
+### Multi
+
+<Preview>
+  <Story name="Multi" parameters={{ previewTabs: { 'canvas': { hidden: true }}}}>
+    <Button>Yo Dizzle</Button>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Button} />
